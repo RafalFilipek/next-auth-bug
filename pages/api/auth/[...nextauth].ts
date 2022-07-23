@@ -11,9 +11,9 @@ export const authOptions: NextAuthOptions = {
     GitlabProvider({
       clientId: process.env.GITLAB_CLIENT_ID || "unknown-client-id",
       clientSecret: process.env.GITLAB_CLIENT_SECRET || "unknown-client-secret",
-      authorization: "https://git.d00b.pl/oauth/authorize?scope=read_user",
-      token: "https://git.d00b.pl/oauth/token",
-      userinfo: "https://git.d00b.pl/api/v4/user",
+      authorization: "my-gitlab.com",
+      token: "my-gitlab.com",
+      userinfo: "my-gitlab.com",
     }),
   ],
 };
